@@ -19,7 +19,6 @@ const deleteController = (req, res) => {
 };
 
 const updateDoneController = (req, res) => {
-  // res.json("wotjs");
   const updateDoneId = req.body.doneItemId;
   GroceryItem.findByIdAndUpdate(
     updateDoneId,
@@ -36,7 +35,6 @@ const updateDoneController = (req, res) => {
   );
 };
 const updateNotDoneController = (req, res) => {
-  // res.json("wotjs");
   const notDoneItemId = req.body.notDoneItemId;
   GroceryItem.findByIdAndUpdate(
     notDoneItemId,
